@@ -52,7 +52,7 @@ nav{
     text-decoration: none;
     padding: 10px 10px;
     text-align: center; 
-    margin-right: 0.874%  
+    margin-right: 0.874%;  
 }
 
 /* ---Título--------------------------------------------------------- */
@@ -73,13 +73,6 @@ a {
 ul a{
     text-decoration: none;
     color: black; 
-}
-
-/*--- Link Redes -------------------------*/
-
-.linkRedes{
-    width: 32px;
-    height: 32px;
 }
 
 /* ---Footer ----------------------------------------------------------------*/
@@ -107,6 +100,7 @@ footer span{
     justify-content: space-evenly;
     height: 15vh;
 }
+
 .linkFooter2{
     display: flex;
     flex-direction: column;
@@ -119,9 +113,32 @@ footer span{
     font-weight: normal;
 }
 
+.linkFooter span:hover{
+    transition: font-size .5s;
+    font-size: 21px;
+}
+
 .linkFooter2 span{
     font-size: 16px;
     font-weight: normal;
+}
+
+.linkFooter2 span:hover{
+    transition: font-size .5s;
+    font-size: 21px;
+}
+
+/*--- Link Redes -------------------------*/
+
+.linkRedes{
+    width: 32px;
+    height: 32px;
+}
+
+.linkRedes:hover{
+    transition: width .5s, height .5s;
+    width: 50px;
+    height: 50px;
 }
 
 /* --ESTILO INDEX */
@@ -185,6 +202,11 @@ footer span{
 
 @media (min-width:1024px){   
 
+    nav a:hover{
+        transform: scale(1.2,1.2);
+        
+    }
+
     .div-flex{
         display: flex;
         justify-content: flex-end;
@@ -218,6 +240,7 @@ footer span{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto 100px auto;
    }
+   
    footer{
     grid-area: footer;
     display: flex;
@@ -230,8 +253,31 @@ footer span{
    }
 
    .titulo{
-        grid-area: titulo;
+        grid-area: titulo
    }
+
+   h1{  
+
+    animation: tituloAnimado 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+   }
+
+ 
+
+  @keyframes tituloAnimado {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(300px);
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+        transform: translateZ(12px);
+        filter: blur(0);
+        opacity: 1;
+    }
+  }
+  
+
    .imagen1{   
     width: 50%; 
    }
@@ -548,13 +594,6 @@ textarea{
     }
 }
 
-  /* ---CONTACTO-Estructura-Tablet--------------------------------------*/
-
-  @media (min-width: 482px) and (max-width:1023px){ 
-    .campos{
-        display: flex;
-    }
-  }
 
 /* --ESTILO SERVICIOS------------ */
 
@@ -876,7 +915,3 @@ textarea{
 .seccion2QuienesSomos h2{
     color: #A5B9E6;
 }
-
-
-
-

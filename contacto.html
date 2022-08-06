@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>DesafíoSitioResponsive</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body>
+        <header> 
+            <div class="logo">
+                <a href="index.html" ><img src="img/logo.png" alt="Logo" class="logo"></a>
+            </div> 
+
+         <!-- menu -->
+         <div class="div-flex">
+            <nav>
+                <a href="index.html" ><span>Inicio</span></a>
+                <a href="servicios.html"><span>Servicios</span></a>
+                <a href="quienes_somos.html"><span>¿Quiénes Somos?</span></a>
+                <a href="nuestros_trabajos.html"><span>Nuestros Trabajos</span></a>
+                <a href="contacto.html"><span>Contacto</span></a>     
+            </nav>
+        </div>
+        </header>
+
+         <!-- ---------------- ------------------------ ------------------------------- --------------------------- ---------------------- -->
+
+        <main class="mainContacto">
+            <h1 class="tituloContacto">Contacto</h1>
+            <section class="seccion1Contacto"> 
+                    <p>Teléfono:(011)123456789</p>
+                    <p>E-mail:mail@mail.com</p>
+                    <a href="#" ><img src="img/facebook.png" alt="" class="linkRedes"></a>
+                    <a href="#" ><img src="img/instagram.png" alt="" class="linkRedes"></a>
+            </section> 
+
+            <section class="seccion2Contacto">
+                <form class="formulario">  
+                    <legend>Formulario de contacto</legend>
+
+                    <legend class="aviso">* Campo obligatorio</legend>
+                        
+                    <label for="nombre" class="campo">Nombre* : </label>
+                    <input type="text" name="nombre"    class="input"/><br>
+
+                    <label for="e-mail" class="campo">E-mail* : </label>
+                    <input type="email" name="e-mail"   class="input"/><br>
+
+                    <label for="telefono" class="campo">Teléfono: </label>
+                    <input type="tel" name="telefono"  class="input"/><br>
+
+                    <label for="asunto" class="campo">Asunto* : </label>
+                    <input type="text" name="asunto"  class="input"/><br>
+
+                    <label for="mensaje" class="campo">Mensaje* : </label><br>
+                    <textarea name="mensaje" ></textarea><br>
+
+                    <input type="submit" value="Enviar"     class="boton"/>
+
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ---------------- ------------------------ ------------------------------- --------------------------- ---------------------- -->
+        <footer>
+            <span>Copiright</span>
+            <div class="divContenedor">
+                <div class="linkFooter">
+                    <a href="index.html"><span>Inicio</span></a>
+                    <a href="servicios.html"><span>Servicios</span></a>
+                    <a href="quienes_somos.html"><span>¿Quiénes Somos?</span></a>
+                </div>
+                <div class="linkFooter2">
+                    <a href="nuestros_trabajos.html"><span>Nuestros Trabajos</span></a>
+                    <a href="contacto.html"><span>Contacto</span></a>
+                    <div>
+                        <a href="#"><img src="img/facebook.png" alt="" width="32" height="32"></a>
+                        <a href="#"><img src="img/instagram.png" alt="" width="32" height="32"></a>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>

@@ -7,6 +7,10 @@
 
 /* - ---------ESTILO GENERAL-------------------------------------------- - */
 
+:root{
+    --color:#A5B9E6;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #293A61;;
@@ -16,9 +20,7 @@ body {
     --color:#A5B9E6;
 }
 
-:root{
-    --color:#A5B9E6;
-}
+
 
 /* - ---Logo--- ---------------------------------------------------------- */
 

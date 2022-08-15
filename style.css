@@ -13,6 +13,7 @@ body {
     background-color: #d9e4f5;
     height: 100vh;
     background-image: url(img/img.jpeg);
+    --color:#A5B9E6;
 }
 
 :root{

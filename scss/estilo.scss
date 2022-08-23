@@ -1,0 +1,22 @@
+@import "tituloAnimado";
+@import "colores";
+
+/* ---Nav------------------------------------------------------------- */
+
+header{
+    nav{
+        div{
+            .navA {
+                background-color: var(colorPrincipal);
+                color: var(colorSecundario);
+                border: 2px outset var(colorSecundario);
+                width: auto;
+                text-decoration: none;
+                padding: 10px 10px;
+                text-align: center; 
+                margin-right: 0.874%;  
+            }
+        }
+    }
+}
+

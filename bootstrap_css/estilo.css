@@ -1,0 +1,102 @@
+/* ---Nav------------------------------------------------------------- */
+.contenedorNav {
+  width: 100%;
+}
+
+.subContenedorNav {
+  width: 100%;
+}
+
+.navA {
+  background-color: var(colorPrincipal);
+  color: var(colorSecundario);
+  border: 2px outset var(colorSecundario);
+  width: auto;
+  text-decoration: none;
+  padding: 10px 10px;
+  text-align: center;
+  margin-right: 0.874%;
+}
+
+h1 {
+  animation: tituloAnimado 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes tituloAnimado {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.logo {
+  height: 140px;
+  width: 140px;
+}
+
+.tarjetaDesktop {
+  height: 480.328px;
+  width: 25rem;
+}
+
+.linkRedes {
+  height: 32px;
+  width: 32px;
+}
+
+.linkRedes:hover {
+  height: 50px;
+  width: 50px;
+}
+
+.imagen2 {
+  height: 450px;
+  width: 95%;
+}
+
+.seccion1Contacto {
+  height: 150px;
+  width: 350px;
+}
+
+.boton, .boton3, .boton2 {
+  background-color: #0d6efd;
+  border-radius: 25%;
+}
+
+.boton2 {
+  background-color: orangered;
+}
+
+.boton3 {
+  background-color: greenyellow;
+  color: black;
+}
+
+.linkdeRedes-facebook {
+  width: 32px;
+  height: 32px;
+}
+
+.linkdeRedes-instagram {
+  width: 32px;
+  height: 32px;
+}
+
+.linkdeRedes-facebook:hover {
+  height: 50px;
+  width: 50px;
+}
+
+.linkdeRedes-instagram:hover {
+  height: 50px;
+  width: 50px;
+}
+
+/*# sourceMappingURL=estilo.css.map */

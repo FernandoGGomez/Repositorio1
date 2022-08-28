@@ -1,0 +1,30 @@
+// MIXIN
+
+@mixin tamaño($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+.logo{
+    @include tamaño(140px,140px);
+}
+
+.tarjetaDesktop{
+    @include tamaño(480.328px,25rem);
+}
+
+.linkRedes{
+    @include tamaño(32px,32px);
+}
+
+.linkRedes:hover{
+    @include tamaño(50px,50px);
+}
+
+.imagen2{
+    @include tamaño(450px,95%);
+}
+
+.seccion1Contacto{
+    @include tamaño(150px,350px );
+}

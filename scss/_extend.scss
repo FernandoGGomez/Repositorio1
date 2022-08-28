@@ -1,0 +1,17 @@
+// EXTEND ------------------
+
+.boton{
+    background-color:#0d6efd;
+    border-radius: 25%
+}
+
+.boton2{
+    @extend .boton;
+    background-color: orangered;
+}
+
+.boton3{
+    @extend .boton;
+    background-color: greenyellow;
+    color: black;
+}

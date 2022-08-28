@@ -1,0 +1,22 @@
+// MAP-----------
+
+$linkDeRedes:(
+    facebook:32px,
+    instagram:32px
+);      
+
+@each $red,$tama in $linkDeRedes {
+    .linkdeRedes-#{$red}{
+        width: $tama;
+        height: $tama;
+    }
+    
+}
+
+.linkdeRedes-facebook:hover{
+    @include tamaño(50px,50px);
+}
+
+.linkdeRedes-instagram:hover{
+    @include tamaño(50px,50px);
+}

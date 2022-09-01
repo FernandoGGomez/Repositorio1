@@ -1,188 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+/*-------RESET------*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* - ---------ESTILO GENERAL-------------------------------------------- - */
-
-:root{
-    --color:#A5B9E6;
+:root {
+  background-color: #d9e4f5;
+  height: 100vh;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #293A61;;
-    background-color: #d9e4f5;
-    height: 100vh;
-    color:var(black);
+/*---Nav---------------------------------------------------------------*/
+nav div a img {
+  /* Logo*/
+  height: 140px;
+  width: 140px;
+  border: solid 1px black;
+  border-radius: 50%;
+}
+nav div div div {
+  width: 100%;
+}
+nav div div div span {
+  margin-right: 0.7%;
+  width: 156px;
+}
+nav div div div span a {
+  /*Barra de navegación */
+  font-size: 17px !important;
+  width: auto;
+  text-decoration: none;
+  padding: 10px 10px !important;
+  text-align: center;
+  margin-right: 0.874%;
+}
+nav div div div span a:hover {
+  background-color: #464E61;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  margin-right: 0.874%;
 }
 
-
-
-/* - ---Logo--- ---------------------------------------------------------- */
-
-.logo{
-    /* width: 140px;
-    height: 140px; */
-    border:solid 1px black;
-    border-radius: 50%;
-}
-
-/* - ---Nav------------------------------------------------------------- - */
-
-.contenedorNav{
-    width: 100%;
-}
-
-.subContenedorNav{
-    width: 100%;
-}
-
-.spanNav{
-    margin-right: .7%;
-    width: 152px;
-}
- .navA {
-    background-color: #464E61;
-    color: var(--color);
-    border: 2px outset var(--color);
-    width: auto;
-    text-decoration: none;
-    padding: 10px 10px;
-    text-align: center; 
-    margin-right: 0.874%;  
-}
-
-/* - ---Título--------------------------------------------------------- - 
-*/
-h1{
-    font-size: 68px;
-    text-shadow: -4px 2px 0px rgb(0, 0, 0);
-    color: var(--color);
-}
-
-/* ---CARRUSEL------------------------- */
-
-/* .tarjetaDesktop{
-    width: 25rem; 
-    height: 480.328px
-} */
-
-.tarjetaMobile{
-    margin-left: 25%;
-    width: 50%
-}
-
-.imagen-tarjeta{
-    height: 55%;
-}
-
-.card-text{
-    color: #fff;
-}
-
-/*
-- ---Footer -----------------------------------------------------------------*/
-footer {
-    border-top: solid 2px var(--color);
-    height: 263px;
-}
-
-.linkFooter{
-    font-size: 16px;
-    font-weight: normal;
-}
-
-.linkFooter:hover{
-    transition: font-size .5s;
-    font-size: 21px;
-}
-
-
+/* ------------------fin nav-----*/
+/*- ---Footer -----------------------------------------------------------------*/
 /*---- Link Redes --------------------------*/
-
-.linkRedesA{
-    display: inline-block;
+div ul li a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+}
+div ul li a img {
+  height: 32px;
+  width: 32px;
+}
+div ul li a img:hover {
+  transition: width 0.5s, height 0.5s;
+  height: 50px;
+  width: 50px;
+}
+div ul li a:hover {
+  transition: font-size 0.5s;
+  font-size: 21px;
 }
 
-/* .linkRedes{
-    width: 32px;
-    height: 32px;
-} */
-
-.linkRedes:hover{
-    transition: width .5s, height .5s;
-    width: 50px;
-    height: 50px;
+/*- ---Fin Footer -----------------------------------------------------------------*/
+/* ---INDEX DESKTOP ------------------*/
+h1 {
+  font-size: 68px;
+  font-weight: bold;
+  color: #212529;
+  text-shadow: -2px 1px 4px #464E61;
+  animation: tituloAnimado 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.descripcion{
-    margin-top: 7%;
+@keyframes tituloAnimado {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
-/*- --ESTILO INDEX -
-
-- ---Sección2Index--------------------------------------------------------------- -*/
-
-.tituloSeccion2{
-    font-style: italic;
-    font-size: 35px;
-    text-shadow: -4px 2px 0px rgb(0, 0, 0);
-}
-
-
-/*- Imágenes de seccion2Index -*/
-
-/* .imagen2{
-    width: 95%;
-    height: 450px;
-} */
-
-
-/*- ---ESTRUCTURA TABLET--- -
-
-   /*- ---INDEX-Estructura-Tablet---------------------------------------*/
-
- @media (min-width: 482px) and (max-width:1023px){ 
-
-   .titulo{
-        font-size: 59px;
-    }  
-
-    h1{
-        font-size: 59px;
-    }
-}
-   
-
-/*- ---ESTRUCTURA SMARTPHONE--- -*/
-
-   /*- ---INDEX-Estructura-Smartphone--------------------------------------- */
-
-@media (max-width: 481px){ 
-   .titulo{
-        font-size: 5vh;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }  
-    h1{
-        font-size: 5vh;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
+h2 {
+  color: #212529;
+  font-size: 40px;
+  font-weight: 700;
 }
 
-   
-   
-/*---ESTILO CONTACTO-----------*/
-
-/*--- Sección 1 Contacto -----------*/
-.seccion1Contacto{
-    border: solid 2px black;
-    /* width: 350px; */
-    /* height: 150px; */
-    font-size: 20px;
-    margin: 40px auto 5% auto;
+section div div p {
+  font-size: 20px;
+  font-weight: 600;
 }
 
+div div div p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*---CARRUSEL------------------------- */
+.tarjetaDesktop {
+  height: 480.328px;
+  width: 25rem;
+}
+
+.tarjetaMobile {
+  margin-left: 25%;
+  width: 50%;
+}
+
+.imagen-tarjeta {
+  height: 55%;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.card-text {
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* ---Fin CARRUSEL------------------------- */
+.descripcion {
+  margin-top: 7%;
+}
+
+.imagen2 {
+  height: 450px;
+  width: 95%;
+}
+
+/*--- Fin INDEX DESKTOP ------------------*/
+/*---CONTACTO-----------------------*/
+.seccion1Contacto {
+  height: 150px;
+  width: 350px;
+  font-size: 20px;
+  margin: 40px auto 5% auto;
+  box-shadow: -10px 0px 10px 5px #d3d3d3;
+}
+
+.linkRedes {
+  height: 32px;
+  width: 32px;
+}
+
+.linkRedes:hover {
+  transition: width 0.5s, height 0.5s;
+  height: 52px;
+  width: 52px;
+}
+
+.formulario {
+  box-shadow: -10px 0px 10px 5px #d3d3d3;
+}
+
+/*---FinCONTACTO-----------------------*/
+
+/*# sourceMappingURL=style.css.map */

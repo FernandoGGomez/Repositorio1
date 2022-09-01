@@ -1,0 +1,107 @@
+/* ---INDEX DESKTOP ------------------*/
+h1{  
+  font-size: 68px;
+  font-weight: bold;
+  color: $colorPrincipal;
+  text-shadow: -2px 1px 4px $colorSecundario;
+  animation: tituloAnimado 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+ }
+
+
+
+@keyframes tituloAnimado {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+      transform: translateZ(12px);
+      filter: blur(0);
+      opacity: 1;
+  }
+}
+
+h2{
+  color: $colorPrincipal;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+section{
+  div{
+    div{
+      p{
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+div {
+  div {
+    div{
+      p{
+        font-size: 20px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+/*---CARRUSEL------------------------- */
+
+.tarjetaDesktop{
+  @include tamaño(480.328px,25rem);
+}
+
+.tarjetaMobile{
+  margin-left: 25%;
+  width: 50%
+}
+
+.imagen-tarjeta{
+  height: 55%;
+}
+
+.card-title{
+  color: #fff;
+}
+.card-text{
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/* ---Fin CARRUSEL------------------------- */
+
+.descripcion{
+  margin-top: 7%;
+}
+
+.imagen2{
+  @include tamaño(450px,95%);
+}
+/*--- Fin INDEX DESKTOP ------------------*/
+
+/*---CONTACTO-----------------------*/
+.seccion1Contacto{
+  @include tamaño(150px,350px );
+  font-size: 20px;
+  margin: 40px auto 5% auto;
+  box-shadow: -10px 0px 10px 5px #d3d3d3;
+}
+
+.linkRedes{
+  @include tamaño(32px,32px);
+}
+.linkRedes:hover{
+  transition: width 0.5s, height 0.5s;
+  @include tamaño(52px,52px);
+}
+
+
+.formulario{
+  box-shadow: -10px 0px 10px 5px #d3d3d3;
+}
+/*---FinCONTACTO-----------------------*/

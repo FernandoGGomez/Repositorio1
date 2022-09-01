@@ -49,18 +49,18 @@
          <!-- ---------------- ------------------------ ------------------------------- --------------------------- ---------------------- -->
 
         <main class="mainContacto">
-            <h1 class="tituloContacto">Contacto</h1>
-            <section class="container seccion1Contacto"> 
+            <h1 class="mt-5 ms-4 tituloContacto">Contacto</h1>
+            <section class="container mt-5 seccion1Contacto"> 
                     <div class="flow">
                       <p >Teléfono:(011)123456789</p>
                       <p >E-mail:mail@mail.com</p>
-                      <a href="https://es-la.facebook.com/" ><img src="../img/facebook.png" alt="" class="linkRedes"></a>
-                      <a href="https://www.instagram.com/" ><img src="../img/instagram.png" alt="" class="linkRedes"></a>
+                      <a href="https://es-la.facebook.com/" target="_blank"><img src="../img/facebook.png" alt="Link_Facebook" class="linkRedes"></a>
+                      <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Link_Instagram" class="linkRedes"></a>
                     </div>
             </section> 
 
             <section class="page-section" id="contact">
-              <div class="container px-4 px-lg-5">
+              <div class="container formulario px-4 px-lg-5">
                   <div class="row gx-4 gx-lg-5 justify-content-center">
                       <div class="col-lg-8 col-xl-6 text-center">
                           <h2 class="mt-0">Formulario de contacto</h2>
@@ -70,27 +70,27 @@
                   <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                       <div class="col-lg-6">
                           <form id="contactForm">
-                              <!-- Nombre input-->
+                              <!-- Input nombre-->
                               <div class="form-floating mb-3">
                                   <input class="form-control " id="name" type="text" placeholder="Escriba su nombre"  data-sb-can-submit="no">
                                   <label for="name">Nombre</label>
                               </div>
-                              <!-- Email address input-->
+                              <!-- Input Email-->
                               <div class="form-floating mb-3">
                                   <input class="form-control" id="email" type="email" placeholder="name@example.com"  data-sb-can-submit="no">
                                   <label for="email">Email</label>
                               </div>
-                              <!-- Phone number input-->
+                              <!-- Input Número de Teléfono-->
                               <div class="form-floating mb-3">
                                   <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" data-sb-can-submit="no">
                                   <label for="phone">Número de teléfono</label>
                               </div>
-                              <!-- Message input-->
+                              <!-- Input Mensaje-->
                               <div class="form-floating mb-3">
                                   <textarea class="form-control" id="message" type="text" placeholder="Escriba su mensaje aquí" style="height: 10rem" data-sb-validations="required" data-sb-can-submit="no"></textarea>
                                   <label for="message">Mensaje</label>
                               </div>
-                              <!-- Submit Button-->
+                              <!-- Boton Enviar-->
                               <div class="d-grid"><input class="btn btn-primary btn-xl  boton" id="submitButton" type="submit" value="Enviar"/></div>
                           </form>
                       </div>
@@ -101,38 +101,51 @@
 
         <!-- ------------------FOOTER ------------------------ ------------------------------- --------------------------- ---------------------- -->
         <div class="container-fluid bg-dark">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
-              <div class="col mb-3   bg-dark">
-                <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <p class="text-muted">© 2022</p>
-              </div>
-          
-              <div class="col mb-3  bg-dark">
-          
-              </div>
-          
-              <div class="col  bg-dark">
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="../index.html" class="nav-link p-0 text-muted linkFooter">Inicio</a></li>
-                  <li class="nav-item mb-2"><a href="./servicios.html" class="nav-link p-0 text-muted linkFooter">Servicios</a></li>
-                  <li class="nav-item mb-2"><a href="./quienes_somos.html" class="nav-link p-0 text-muted linkFooter">¿Quiénes Somos?</a></li>
-                </ul>
-              </div>
-          
-              <div class="col mb-3  bg-dark">
-                <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="./nuestros_trabajos.html" class="nav-link p-0 text-muted linkFooter">Nuestros Trabajos</a></li>
-                  <li class="nav-item mb-2"><a href="./contacto.html" class="nav-link p-0 text-muted linkFooter">Contacto</a></li>
-                  <li class="nav-item mb-2"><a href="https://es-la.facebook.com/" class="abloque nav-link linkRedesA p-0 "><img src="../img/facebook.png" class="linkRedes"></a><a class="linkRedesA" href="https://www.instagram.com/"><img src="../img/instagram.png" class="linkRedes"></a></li>
-                </ul>
-              </div>
-          
-              <div class="col mb-3 bg-dark">
-              </div>
-            </footer>
-          </div>
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
+            <div class="col mb-3   bg-dark">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <p class="text-muted">© 2022</p>
+            </div>
+        
+            <div class="col mb-3  bg-dark">
+        
+            </div>
+        
+            <div class="col  bg-dark">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="../index.html" class="nav-link p-0 text-muted">Inicio</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./servicios.html" class="nav-link p-0 text-muted">Servicios</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./quienes_somos.html" class="nav-link p-0 text-muted">¿Quiénes Somos?</a>
+                </li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3  bg-dark">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href="./nuestros_trabajos.html" class="nav-link p-0 text-muted">Nuestros Trabajos</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="./contacto.html" class="nav-link p-0 text-muted">Contacto</a>
+                </li>
+                <li class="nav-item mb-2">
+                  <a href="https://es-la.facebook.com/" target="_blank" class="abloque p-0 "><img src="../img/facebook.png" alt="Link_Facebook"></a>
+                  <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" alt="Link_Instagram"></a>
+                </li>
+              </ul>
+            </div>
+        
+            <div class="col mb-3 bg-dark">
+            </div>
+          </footer>
+        </div>
         <script src="../js/bootstrap.js"></script>
     </body>
 </html>

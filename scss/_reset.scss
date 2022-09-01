@@ -1,0 +1,20 @@
+/*-------RESET------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* - ---------ESTILO GENERAL-------------------------------------------- - */
+
+:root {
+    background-color: #d9e4f5;
+    height: 100vh;
+}
+
+@mixin tamaño($alto,$ancho){
+    height: $alto;
+    width: $ancho;
+}

@@ -1,18 +1,39 @@
-/* ---Nav------------------------------------------------------------- */
-
-.contenedorNav{
-    width: 100%;
-}
-.subContenedorNav{
-    width: 100%;
-}
-.navA {
-    background-color: var(colorPrincipal);
-    color: var(colorSecundario);
-    border: 2px outset var(colorSecundario);
-    width: auto;
-    text-decoration: none;
-    padding: 10px 10px;
-    text-align: center; 
-    margin-right: 0.874%;  
+/*---Nav---------------------------------------------------------------*/
+nav{
+    div{
+        a{
+            img{
+                        /* Logo*/
+                @include tamaño(140px,140px);
+                border:solid 1px black;
+                border-radius: 50%;
+            }
+        }
+        div{
+            div{
+                width: 100%;
+                span{
+                     margin-right: .7%;
+                     width: 156px;
+                    a{
+                        /*Barra de navegación */
+                      font-size: 17px !important;
+                      width: auto;
+                      text-decoration: none;
+                      padding: 10px 10px !important;
+                      text-align: center; 
+                      margin-right: 0.874%;  
+                    }
+                    a:hover{
+                        background-color: $colorSecundario;
+                        color: white;
+                        padding: 10px 10px;
+                        text-align: center; 
+                        margin-right: 0.874%;
+                    }
+                }
+            }
+        }
     }
+}
+    /* ------------------fin nav-----*/

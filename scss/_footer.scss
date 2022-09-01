@@ -1,0 +1,29 @@
+/*- ---Footer -----------------------------------------------------------------*/
+
+/*---- Link Redes --------------------------*/
+
+div{
+  ul{
+    li{
+      a{
+        display: inline-block;
+        font-size: 16px;
+        font-weight: normal;
+        img{
+          @include tamaño(32px,32px);
+        }
+        img:hover{
+          transition: width .5s, height .5s;
+          @include tamaño(50px,50px);
+        }
+      }
+      a:hover{
+        transition: font-size .5s;
+        font-size: 21px;
+      }
+    }
+  }
+}
+  
+
+/*- ---Fin Footer -----------------------------------------------------------------*/
